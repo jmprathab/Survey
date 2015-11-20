@@ -47,8 +47,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         sharedPreferences = getSharedPreferences(ApplicationHelper.SHARED_PREFS_USER_DATA, Context.MODE_PRIVATE);
-        //if (sharedPreferences.getBoolean(ApplicationHelper.SUCCESSFUL_LOGIN_HISTORY, false)) {
-        if (true) {
+        if (sharedPreferences.getBoolean(ApplicationHelper.SUCCESSFUL_LOGIN_HISTORY, false)) {
+            // if (true) {
             startActivity(new Intent(Login.this, SelectSurvey.class));
             finish();
         }
@@ -184,5 +184,11 @@ public class Login extends AppCompatActivity {
         super.onPause();
         email.setText("");
         password.setText("");
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 }

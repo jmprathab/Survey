@@ -23,14 +23,13 @@
         </activity>
         <activity
             android:name=".SelectSurvey"
-            android:windowSoftInputMode="stateHidden"></activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".SignUp"
-            android:windowSoftInputMode="stateHidden">
-
-        </activity>
-        <activity android:name=".SurveyInformation"></activity>
-        <activity android:name=".About"></activity>
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".SurveyInformation" />
+        <activity android:name=".About" />
+        <activity android:name=".Survey"></activity>
     </application>
 
 </manifest>

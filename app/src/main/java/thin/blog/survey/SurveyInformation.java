@@ -28,6 +28,14 @@ public class SurveyInformation extends AppCompatActivity {
         setContentView(R.layout.activity_survey_information);
         setToolbar();
         initialize();
+        takeSurvey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startIntent = new Intent(SurveyInformation.this, Survey.class);
+                startIntent.putExtra("SURVEY_ID", surveyData.getSurveyId());
+                startActivity(startIntent);
+            }
+        });
     }
 
     private void initialize() {

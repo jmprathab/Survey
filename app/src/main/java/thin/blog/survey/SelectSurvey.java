@@ -111,6 +111,7 @@ public class SelectSurvey extends AppCompatActivity {
         try {
             serverSuccess = response.getInt("success");
             if (serverSuccess == 1) {
+
                 int surveyId = Integer.parseInt(response.getString("survey_id"));
                 int organizationId = Integer.parseInt(response.getString("organization_id"));
                 String organizationName = response.getString("organization_name");

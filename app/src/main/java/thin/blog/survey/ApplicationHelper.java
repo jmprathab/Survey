@@ -16,6 +16,8 @@ public class ApplicationHelper extends Application {
     public static final String LOGIN;
     public static final String SIGNUP;
     public static final String SELECT_SURVEY;
+    public static final String FETCH_QUESTIONS;
+    public static final String SUBMIT_ANSWERS;
 
     //for testing
     private static final Boolean localhost = true;
@@ -25,13 +27,15 @@ public class ApplicationHelper extends Application {
 
     static {
         if (localhost) {
-            ADDRESS = "http://192.168.1.5/survey/";
+            ADDRESS = "http://192.168.1.2:80/survey/";
         } else {
             ADDRESS = "http://www.thin.comyr.com/";
         }
         LOGIN = ADDRESS + "login.php";
         SIGNUP = ADDRESS + "register.php";
         SELECT_SURVEY = ADDRESS + "choosesurvey.php";
+        FETCH_QUESTIONS = ADDRESS + "fetchquestions.php";
+        SUBMIT_ANSWERS = ADDRESS + "submitanswers.php";
     }
 
     public static ApplicationHelper getMyApplicationInstance() {
