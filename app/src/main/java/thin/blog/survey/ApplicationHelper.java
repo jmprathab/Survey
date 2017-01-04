@@ -27,7 +27,7 @@ public class ApplicationHelper extends Application {
 
     static {
         if (localhost) {
-            ADDRESS = "http://192.168.1.2:80/survey/";
+            ADDRESS = "http://192.168.1.5:80/survey/";
         } else {
             ADDRESS = "http://www.thin.comyr.com/";
         }
