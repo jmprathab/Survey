@@ -103,7 +103,9 @@ public class Login extends AppCompatActivity {
         try {
             serverSuccess = response.getInt("success");
             serverMessage = response.getString("message");
-            userDataUserId = Integer.parseInt(response.getString("user_id"));
+            if (serverSuccess == 1) {
+                userDataUserId = Integer.parseInt(response.getString("user_id"));
+            }
             finalDecision();
         } catch (JSONException e) {
             e.printStackTrace();
@@ -143,7 +145,7 @@ public class Login extends AppCompatActivity {
 
     public void forgotPassword(View v) {
         builder.setTitle("Reset Password");
-        builder.setMessage("Visit \nsurvey.com/forgotpassword.php\n to reset password");
+        builder.setMessage("Visit \nwww.survey.com/forgot.php\n to reset password");
         builder.setCancelable(false);
         builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
             @Override
