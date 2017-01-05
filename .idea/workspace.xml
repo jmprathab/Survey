@@ -10,11 +10,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9d83ecf-3347-4b72-b978-2327a34c018a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/thin/blog/survey/Login.java" afterPath="$PROJECT_DIR$/app/src/main/java/thin/blog/survey/Login.java" />
-    </list>
+    <list default="true" id="f9d83ecf-3347-4b72-b978-2327a34c018a" name="Default" comment="" />
     <ignored path="Survey.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
